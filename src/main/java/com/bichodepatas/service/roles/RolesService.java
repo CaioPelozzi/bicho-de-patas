@@ -5,8 +5,6 @@ import com.bichodepatas.entities.roles.Roles;
 import com.bichodepatas.entities.roles.RolesRequest;
 import com.bichodepatas.entities.roles.RolesResponse;
 import com.bichodepatas.repository.roles.RolesRepository;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -29,7 +27,6 @@ public class RolesService {
     }
 
     public RolesResponse getById(Long id){
-        System.out.println(id);
         Roles role = repository.getReferenceById(id);
 
         return new RolesResponse(role.getId(), role.getName());

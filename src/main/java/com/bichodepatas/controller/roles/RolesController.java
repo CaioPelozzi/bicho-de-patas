@@ -3,7 +3,6 @@ package com.bichodepatas.controller.roles;
 import com.bichodepatas.entities.roles.RolesRequest;
 import com.bichodepatas.entities.roles.RolesResponse;
 import com.bichodepatas.service.roles.RolesService;
-import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
